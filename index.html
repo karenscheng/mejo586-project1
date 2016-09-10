@@ -44,6 +44,7 @@
         <div class="icons">
           <div class='img-wrapper'>
             <img class='image' src="images/dashboard-icon.png">
+            <!-- <img class='image' src="images/marker.png"> -->
           </div>
           <div class='img-wrapper'>
             <img class='image' src="images/user-icon.png">
@@ -70,8 +71,6 @@
           <div class="col-md-8 dashboard-word">
             <h2>Dashboard</h2>
           </div>
-
-
           <div class="col-md-4 form-group search-bar">
             <div contenteditable="true" id="search">
               <img src="images/search-icon.png">
@@ -80,91 +79,200 @@
         </div>
       </div>
 
-        <div class="main-content">
-          <div class="background">
-          <div class="announcements-row">
-            <div class="col-md-3 announcements">
-              <p id="announcements">ANNOUNCEMENTS</p>
-            </div>
-            <div class="col-md-8 words">
-              Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-              mus. Vivamus sagittis lacus
-            </div>
-            <div class="col-md-1 arrows">
-              <img src="images/left-arrow.png"><img src="images/right-arrow.png">
-            </div>
-          </div>
-       </div>
+    <div class="row main-content">
+      <div class="col-md-12 background nopadding">
+      <div class="row announcements-row nopadding">
+        <div class="col-md-2 announcements">
+          <p id="announcements">ANNOUNCEMENTS</p>
+        </div>
+        <div class="col-md-9 words">
+          <p id="words">
+            Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            mus. Vivamus sagittis lacus
+          </p>
+        </div>
+        <div class="col-md-1 arrows">
+          <img src="images/left-arrow.png" id="left-arrow">
+          <img src="images/right-arrow.png" id="right arrow">
+        </div>
       </div>
 
-      <!-- <div class="col-md-1 left-margin"></div>
-      <div class="col-md-4 tasks">
-        <h2>Tasks</h2><img src="images/settings-gray.png">
-        <ul>
-          <li>
-            <img src="images/1-gray.png">
-            <h3>Welcome Contacts</h3>
-            <img src="images/welcome-contacts-count.png">
-          </li>
-          <li>
-            <img src="images/2-green.png">
-            <h3>Provide Responses</h3>
-            <img src="images/provide-responses-count.png">
-          </li>
-          <li>
-            <img src="images/3-green.png">
-            <h3>Review Activity</h3>
-            <img src="images/review-activity-count.png">
-          </li>
-          <li>
-            <img src="images/4-green.png">
-            <h3>Reach Out</h3>
-            <img src="images/reach-out-count.png">
-          </li>
-        </div>
-        <div class="col-md-6 analytics">
-          <h2>Analytics</h2>
-          <p>ACTIVITY</p> -->
-          <!-- TODO: ADD DROPDOWN HERE -->
-          <!-- <div class="row">
-            <img src="images/graph.png">
-            <img src="images/channels-and-referrals-full.png">
+      <div class="col-md-4 tasks nopadding">
+        <div class="row tasks-block nopadding">
+          <div class="row heading-icon nopadding">
+            <div class="col-md-9">
+              <h2 id="tasks">Tasks</h2>
+            </div>
+            <div class="col-md-3">
+              <img src="images/settings-gray.png" id="tasks-setting">
+            </div>
           </div>
-          <div class="row">
-            <img src="images/facebook.png">
-            <img src="images/Twitter.png">
-            <img src="images/Foursquare.png">
-            <img src="images/Google+.png">
+          <ul id="tasks-list">
+            <li>
+              <div class="row tasks nopadding">
+                <div class="col-md-1">
+                  <img src="images/1-gray.png" class="tasks-item">
+                </div>
+                <div class="col-md-8 tasks-text">
+                  <h4 class="tasks-item" id="first-task">Welcome Contacts</h4>
+                </div>
+                <div class="col-md-2">
+                  <img src="images/welcome-contacts-count.png" class="tasks-item">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row tasks nopadding">
+                <div class="col-md-1">
+                  <img src="images/2-green.png">
+                </div>
+                <div class="col-md-8 tasks-text">
+                  <h4>Provide Responses</h4>
+                </div>
+                <div class="col-md-2">
+                  <img src="images/provide-responses-count.png">
+                </div>
+              </div>
+            <li>
+              <div class="row tasks nopadding">
+                <div class="col-md-1">
+                  <img src="images/3-green.png">
+                </div>
+                <div class="col-md-8 tasks-text">
+                  <h4>Review Activity</h4>
+                </div>
+                <div class="col-md-2">
+                  <img src="images/review-activity-count.png">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row tasks nopadding">
+                <div class="col-md-1">
+                  <img src="images/4-green.png">
+                </div>
+                <div class="col-md-8 tasks-text">
+                  <h4>Reach Out</h4>
+                </div>
+                <div class="col-md-2">
+                  <img src="images/reach-out-count.png">
+                </div>
+              </div>
+            </li>
+          </div>
+        </div> <!-- end of Tasks -->
+
+      <div class="col-md-8 analytics nopadding">
+        <div class="row analytics-block nopadding">
+          <div class="row analytics-word nopadding">
+            <h2 id="analytics">Analytics</h2>
+          </div>
+          <div class="row analytics-graph nopadding">
+            <div class="col-md-9 left-chunk">
+              <div class="row activity-dropdown">
+                <div class="col-md-6">
+                  <p id="small-caps">ACTIVITY</p>
+                </div>
+                <div class="col-md-6">
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">06/28/11 - 07/21/11
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">07/22/11 - 08/21/11</a></li>
+                      <li><a href="#">08/22/11 - 09/21/11</a></li>
+                      <li><a href="#">09/2/11 - 10/21/11</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <img src="images/graph.png" id="graph">
+            </div>
+            <div class="col-md-3">
+              <img src="images/channels-and-referrals-full.png" id="wheels">
+            </div>
+          </div>
+          <div class="row social-logos">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <!-- TODO: need checkboxes, need to figure out how to make same line -->
+              <!-- <div class="checkbox">
+                <input type="checkbox" value="">
+              </div> -->
+              <img src="images/facebook.png">
+            </div>
+            <div class="col-md-2">
+              <img src="images/Twitter.png">
+            </div>
+            <div class="col-md-2">
+              <img src="images/Foursquare.png">
+            </div>
+            <div class="col-md-2">
+              <img src="images/Google+.png">
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+      </div>
+    </div> <!-- end of Analytics -->
+
+    <div class="col-md-4 recommendations">
+      <h2>Recommendations<h2>
+        <ul id="recommendations">
+          <li><img src="images/7-steps.png"></li>
+          <li><img src="images/increase-traction.png"></li>
+          <li><img src="images/creating-promotion.png"></li>
+          <li><img src="images/share-more.png"></li>
+        </ul>
+      </div>
+
+      <div class="col-md-8 contacts-customers">
+        <div class="row cc">
+          <div class="col-md-6 contacts">
+            <img src="images/contacts.png" id="contacts">
+          </div>
+          <div class="col-md-6 customers">
+            <img src="images/customers.png" id="customers">
           </div>
         </div>
-        <div class="col-md-1 right-margin"></div>
+      </div>
 
-        <div class="col-md-1 left-margin"></div>
-        <div class="col-md-4 recommendations">
-          <h2>Recommendations<h2>
-            <ul>
-              <li><img src="images/7-steps.png"></li>
-              <li><img src="images/increase-traction.png"></li>
-              <li><img src="images/creating-promotion.png"></li>
-              <li><img src="images/share-more.png"></li>
-            </ul>
+      <div class="col-md-4 blank"></div>
+
+      <div class="col-md-8 didjya">
+        <div class="row did-you-know">
+          <div class="row blue-block">
+            <div class="col-md-1 back nopadding">
+              <img src="images/back-arrow.png" id="back-arrow">
+            </div>
+            <div class="col-md-10 paragraphs">
+              <p>DID YOU KNOW?</p>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta</p>
+              <p>sem malesuada magna mollis euismod.</p>
+            </div>
+            <div class="col-md-1 next nopadding">
+              <img src="images/next-arrow.png" id="next-arrow">
+            </div>
           </div>
-        <div class="col-md-6 contacts-customers">
-          <div class="row"> -->
-            <!-- TODO OMG THIS PART IS SO HARD UGH -->
-          <!-- </div>
-        </div> -->
-        <!-- TODO ADD "DID YOU KNOW?" -->
-        <!-- <div class="col-md-1 right-margin"></div>
-
-        <div class="col-md-1 left-margin"></div>
-        <div class="col-md-12 ads">
-          <img src="images/left-promo.png">
-          <img src="images/dude.png">
-          <img src="images/right-promo.png">
         </div>
-        <div class="col-md-1 right-margin"></div> -->
+      </div>
 
+      <div class="col-md-12 nopadding">
+        <div class="row ads nopadding" id="ads">
+          <div class="col-md-4">
+            <img src="images/left-promo.png" id="left-pic">
+          </div>
+          <div class="col-md-4">
+            <img src="images/dude.png" id="dude">
+          </div>
+          <div class="col-md-4">
+            <img src="images/right-promo.png" id="right-pic">
+          </div>
+        </div>
+      </div>
+
+      </div> <!-- background -->
+
+      </div> <!-- row -->
     </div><!-- /.container -->
 
 
