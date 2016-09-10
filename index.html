@@ -8,9 +8,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/bootstrap-logo.png">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Bootstrap Dashboard</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -27,33 +27,143 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="navbar-brand" href="#">MINI of Raleigh</a></li>
+            <li><a href="#"><img src="images/question-mark-icon.png" id="question-mark"></a></li>
+            <li><a href="#about"><img src="images/settings-icon.png" id="settings"></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container">
-
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <div class="container-fluid" id="dashboard">
+      <div class="row">
+        <div class="icons">
+          <div class='img-wrapper'>
+            <img class='image' src="images/dashboard-icon.png">
+          </div>
+          <div class='img-wrapper'>
+            <img class='image' src="images/user-icon.png">
+          </div>
+          <div class='img-wrapper'>
+            <img class='image' src="images/messages-icon.png">
+          </div>
+          <div class='img-wrapper'>
+            <img class='image' src="images/tag-icon.png">
+          </div>
+          <div class='img-wrapper'>
+            <img class='image' src="images/page-icon.png">
+          </div>
+          <div class='img-wrapper'>
+            <img class='image' src="images/graph-icon.png">
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 green-dashboard">
+          <div class="col-md-8 dashboard-word">
+            <h2>Dashboard</h2>
+          </div>
+
+
+          <div class="col-md-4 form-group search-bar">
+            <div contenteditable="true" id="search">
+              <img src="images/search-icon.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="main-content">
+          <div class="background">
+          <div class="announcements-row">
+            <div class="col-md-3 announcements">
+              <p id="announcements">ANNOUNCEMENTS</p>
+            </div>
+            <div class="col-md-8 words">
+              Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Vivamus sagittis lacus
+            </div>
+            <div class="col-md-1 arrows">
+              <img src="images/left-arrow.png"><img src="images/right-arrow.png">
+            </div>
+          </div>
+       </div>
+      </div>
+
+      <!-- <div class="col-md-1 left-margin"></div>
+      <div class="col-md-4 tasks">
+        <h2>Tasks</h2><img src="images/settings-gray.png">
+        <ul>
+          <li>
+            <img src="images/1-gray.png">
+            <h3>Welcome Contacts</h3>
+            <img src="images/welcome-contacts-count.png">
+          </li>
+          <li>
+            <img src="images/2-green.png">
+            <h3>Provide Responses</h3>
+            <img src="images/provide-responses-count.png">
+          </li>
+          <li>
+            <img src="images/3-green.png">
+            <h3>Review Activity</h3>
+            <img src="images/review-activity-count.png">
+          </li>
+          <li>
+            <img src="images/4-green.png">
+            <h3>Reach Out</h3>
+            <img src="images/reach-out-count.png">
+          </li>
+        </div>
+        <div class="col-md-6 analytics">
+          <h2>Analytics</h2>
+          <p>ACTIVITY</p> -->
+          <!-- TODO: ADD DROPDOWN HERE -->
+          <!-- <div class="row">
+            <img src="images/graph.png">
+            <img src="images/channels-and-referrals-full.png">
+          </div>
+          <div class="row">
+            <img src="images/facebook.png">
+            <img src="images/Twitter.png">
+            <img src="images/Foursquare.png">
+            <img src="images/Google+.png">
+          </div>
+        </div>
+        <div class="col-md-1 right-margin"></div>
+
+        <div class="col-md-1 left-margin"></div>
+        <div class="col-md-4 recommendations">
+          <h2>Recommendations<h2>
+            <ul>
+              <li><img src="images/7-steps.png"></li>
+              <li><img src="images/increase-traction.png"></li>
+              <li><img src="images/creating-promotion.png"></li>
+              <li><img src="images/share-more.png"></li>
+            </ul>
+          </div>
+        <div class="col-md-6 contacts-customers">
+          <div class="row"> -->
+            <!-- TODO OMG THIS PART IS SO HARD UGH -->
+          <!-- </div>
+        </div> -->
+        <!-- TODO ADD "DID YOU KNOW?" -->
+        <!-- <div class="col-md-1 right-margin"></div>
+
+        <div class="col-md-1 left-margin"></div>
+        <div class="col-md-12 ads">
+          <img src="images/left-promo.png">
+          <img src="images/dude.png">
+          <img src="images/right-promo.png">
+        </div>
+        <div class="col-md-1 right-margin"></div> -->
 
     </div><!-- /.container -->
 
