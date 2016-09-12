@@ -23,29 +23,51 @@ body {
   border-color: #1e88dd;
 }
 
-#dashboard .row{
+#dashboard .blue-row{
   background-image: url('menu-background.png');
   height: 110px;
   width: 100vw;
   background-repeat: repeat;
 }
 
-#dashboard .icons{
+.icons{
+  height: 100%;
+}
+
+.img-col{
+  height: 100%;
   display: flex;
-  width: 50%;
-  height: inherit;
-  padding: 10px;
-  margin: 0 auto;
-  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-.img-wrapper img{
-  height: 60px;
-  width: auto;
+.stack-images{
+  height: 100%;
 }
 
-.img-wrapper{
-  flex: 1;
+.dashboard-icon{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.marker-div{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.img-col .marker{
+  /*position: absolute;
+  bottom: 0;
+  left: 0;*/
+  /*align-items: baseline;*/
 }
 
 .green-dashboard{
@@ -133,6 +155,7 @@ body {
 
 #words{ /*words*/
   margin: 0;
+  color: #7F7F7F;
 }
 
 .arrows{
@@ -225,6 +248,23 @@ h4{
   margin-bottom: 20px;
 }
 
+/*Custom checkbox isn't working :( */
+
+/*input[type='checkbox'] {
+	opacity: 0;
+}*/
+
+/* Apply custom images - size your images according to text and stuff */
+/* Take any custom image you want and encode it with http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ or alike */
+/*input[type='checkbox']{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAEbgAABG4B0KOyaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACLSURBVDiN7Y4hDoNAAAR3rxeCxyBaX15ADsG3SPhAU9tP3RP4AgZbQbLZKlQNtJbxM7t0398kjQYqA2/sowz2cpEeUdIo6VXkPO2UAQBrSg1iHIKB6qgMAEXOk8k6HLj9hW2FX+WNM3AGtkD5h88Q7GVNqTlqrl13JznTbXtVjIPJ2rb2LpOco/38ABW9OK5LzYh0AAAAAElFTkSuQmCC) no-repeat center left;
+	padding-left: 18px;
+	margin-left: -18px;
+}
+input[type='checkbox']:checked{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAEbgAABG4B0KOyaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFiSURBVDiNlZAxSyNRFIW/+3wTBBvRxsK12kLBWsmMSbkLu62dYB2xsBQE0UIQO5HdztY/4A/YJiEZxHpdsFOLNO52C0nmzbGKmMTI5JTn3e++c4+pWv0UQjgQzAv+U0zTTnqeCuHUhxAOQggXpVbrriAMQLdcXsH7fSeYnxQGKLVadzJbcBPEHpGk4ApPm7ksSc47cfz5re2L8iFJfgI1B3PAdt8fTbC6Whq2skrlWFAD0qjTqb19G1iQVatJb3b2vhfHa32vlyQ7SEfAb5/n37m9Hehs4ASTtoAlnPuVVSqbluczZvZD8Bhl2VfS9O9wuoEEU43GLmYXwAzStcyugH/K8y+k6dNoM8MdSPL1+h5mh0AEZMrzb6Vm88978MgJr2a9ftLb2Gib9BA1mzfj4LELAKJG4/IjsC8HTBcZHCNzTnrulssrk5LdOF42s7ZpfX0xeL8vswVJoejPZtb20tkLKyaJLiCC000AAAAASUVORK5CYII=) no-repeat center left;
+}*/
+
 .recommendations{
   margin-top: -100px;
 }
@@ -252,7 +292,7 @@ h4{
 }
 
 .blue-block{
-  background-color: #1e88dd;
+  background-color: #2498F4;
   border-radius: 10px;
   padding: 40px 0 40px;
   margin: 30px;
@@ -279,10 +319,7 @@ h4{
 }
 
 #ads{
-  background-color: #1e88dd;
-  /*height: 200px;
-  display: flex;
-  align-items: center;*/
+  background-color: #2498F4;
 }
 
 #ads img{
@@ -297,4 +334,108 @@ h4{
 
 #right-pic{
   margin-top: 12px;
+}
+
+.tool{
+  background-color: #F4F4F4;
+}
+
+.container{
+  margin-bottom: 30px;
+}
+
+.bottom-toolbar{
+  box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.12), 5px 6px 30px 0 rgba(0, 0, 0, 0.52);
+}
+
+.blue{
+  color: #2498F2;
+  font-weight: bold;
+}
+
+.tool{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tool-text{
+  color: #7F7F7F;
+}
+
+.options{
+  color: #B0B0B0;
+  border-right: thin solid #D3D3D3;
+  display: flex;
+  flex-direction: column;
+}
+
+.options-text{
+  margin: auto;
+}
+
+.notification{
+  border-right: thin solid #D3D3D3;
+  display: flex;
+  flex-direction: column;
+}
+
+.another-one{
+  margin: auto;
+}
+
+.with-arrow{
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tool-text{
+  display: flex;
+  flex-direction: column;
+}
+
+#blue-arrow{
+  margin-top: 20px;
+  float: right;
+}
+
+.logout{
+  border-right: thin solid #D3D3D3;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons{
+  border-right: thin solid #D3D3D3;
+  display: flex;
+  align-items: center;
+}
+
+.photo{
+  margin-left: 5px;
+}
+
+#avatar{
+  padding: 5px;
+}
+
+.logout-row{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-text{
+  display: flex;
+  flex-direction: column;
 }
