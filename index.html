@@ -39,29 +39,37 @@
       </div>
     </nav>
 
-    <div class="container-fluid" id="dashboard">
-      <div class="row">
-        <div class="icons">
-          <div class='img-wrapper'>
-            <img class='image' src="images/dashboard-icon.png">
-            <!-- <img class='image' src="images/marker.png"> -->
+    <div class="container-fluid nopadding" id="dashboard">
+      <div class="row blue-row nopadding">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 icons">
+          <div class="col-md-2 img-col">
+            <div class="row stack-images">
+              <div class="col-md-12 dashboard-icon">
+                <img class='image' src="images/dashboard-icon.png">
+              </div>
+              <div class="col-md-12 marker-div">
+                <img class='marker' src="images/marker.png">
+              </div>
+            </div>
           </div>
-          <div class='img-wrapper'>
+          <div class="col-md-2 img-col">
             <img class='image' src="images/user-icon.png">
           </div>
-          <div class='img-wrapper'>
+          <div class="col-md-2 img-col">
             <img class='image' src="images/messages-icon.png">
           </div>
-          <div class='img-wrapper'>
+          <div class="col-md-2 img-col">
             <img class='image' src="images/tag-icon.png">
           </div>
-          <div class='img-wrapper'>
+          <div class="col-md-2 img-col">
             <img class='image' src="images/page-icon.png">
           </div>
-          <div class='img-wrapper'>
+          <div class="col-md-2 img-col">
             <img class='image' src="images/graph-icon.png">
           </div>
         </div>
+        <div class="col-md-3"></div>
       </div>
     </div>
 
@@ -175,6 +183,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="dropdown">
+                    <li class="dropdown" style="list-style: none;">
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">06/28/11 - 07/21/11
                     <span class="caret"></span></button>
                     <ul class="dropdown-menu">
@@ -182,6 +191,7 @@
                       <li><a href="#">08/22/11 - 09/21/11</a></li>
                       <li><a href="#">09/2/11 - 10/21/11</a></li>
                     </ul>
+                  </li>
                   </div>
                 </div>
               </div>
@@ -194,20 +204,24 @@
           <div class="row social-logos">
             <div class="col-md-2"></div>
             <div class="col-md-2">
-              <!-- TODO: need checkboxes, need to figure out how to make same line -->
-              <!-- <div class="checkbox">
-                <input type="checkbox" value="">
-              </div> -->
-              <img src="images/facebook.png">
+              <div class="checkbox-inline">
+                <label><input type="checkbox" value=""><img src="images/facebook.png"></label>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src="images/Twitter.png">
+              <div class="checkbox-inline">
+                <label><input type="checkbox" value=""><img src="images/Twitter.png"></label>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src="images/Foursquare.png">
+              <div class="checkbox-inline">
+                <label><input type="checkbox" value=""><img src="images/Foursquare.png"></label>
+              </div>
             </div>
             <div class="col-md-2">
-              <img src="images/Google+.png">
+              <div class="checkbox-inline">
+                <label><input type="checkbox" value=""><img src="images/Google+.png"></label>
+              </div>
             </div>
             <div class="col-md-2"></div>
           </div>
@@ -269,12 +283,45 @@
           </div>
         </div>
       </div>
-
       </div> <!-- background -->
-
       </div> <!-- row -->
     </div><!-- /.container -->
 
+    <div class="col-md-12 nopadding bottom-toolbar">
+      <div class="row nopadding tool">
+        <div class="col-md-3 options">
+          <span class="options-text">Tutorials | Support | Blog</span>
+        </div>
+        <div class="col-md-6 notification">
+          <div class="row with-arrow">
+            <div class="col-md-10 tool-text">
+              <div class="another-one">
+                <span class="blue">Ariel Winter</span> likes your
+                <span class="blue">Win A Cooper Sweepstakes</span> Promotion
+              </div>
+            </div>
+            <div class="col-md-2">
+              <img src="images/up-arrow-blue.png" id="blue-arrow">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1 nopadding logout">
+          <div class="row nopadding logout-row">
+            <div class="col-md-6 nopadding photo">
+              <img src="images/user-avatar.png" id="avatar">
+            </div>
+            <div class="col-md-6 nopadding logout-text blue">
+              <span class="logout-word">Logout</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1 nopadding social-icons">
+          <img src="images/social-icons.png" class="another-one">
+        </div>
+      <div class="col-md-1 blank">
+      </div>
+    </div>
+  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
